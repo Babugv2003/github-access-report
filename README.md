@@ -174,11 +174,17 @@ This response indicates which repositories each user has access to.
 
 ## Architecture
 
-```mermaid
-graph TD
-    A[Client / Browser] --> B[Spring Boot Controller]
-    B --> C[GitHubService]
-    C --> D[GitHub REST API]
+```
+Client / Browser
+        |
+        v
+Spring Boot Controller
+        |
+        v
+GitHubService
+        |
+        v
+GitHub REST API
 ```
 
 
