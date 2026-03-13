@@ -149,7 +149,11 @@ http://localhost:8080/api/access-report
 ```
 
 ---
+### Testing the API
 
+Run the application and open the following URL in your browser:
+
+http://localhost:8080/api/access-report
 ## Example Response
 
 ```
@@ -164,8 +168,22 @@ http://localhost:8080/api/access-report
 ]
 ```
 
+
 This response indicates which repositories each user has access to.
 
+---
+## Architecture
+
+Client
+   |
+   v
+Spring Boot REST API
+   |
+   v
+GitHubService
+   |
+   v
+GitHub REST API
 ---
 
 ## How the Application Works
@@ -227,6 +245,7 @@ To improve performance, the application can be extended to:
 * Add logging and monitoring
 * Add Swagger/OpenAPI documentation
 * Add pagination support for large organizations
+* Scalable design capable of supporting organizations with 100+ repositories and 1000+ users.
 
 ---
 
