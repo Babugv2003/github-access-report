@@ -91,7 +91,7 @@ src/main/resources/application.properties
 Add the following configuration:
 
 ```
-github.token=github.token=YOUR_GITHUB_PERSONAL_ACCESS_TOKEN
+github.token=YOUR_GITHUB_PERSONAL_ACCESS_TOKEN
 github.org=babu-dev-org
 ```
 
