@@ -171,20 +171,16 @@ http://localhost:8080/api/access-report
 
 This response indicates which repositories each user has access to.
 
----
+
 ## Architecture
 
-Client
-   |
-   v
-Spring Boot REST API
-   |
-   v
-GitHubService
-   |
-   v
-GitHub REST API
----
+```mermaid
+graph TD
+    A[Client / Browser] --> B[Spring Boot Controller]
+    B --> C[GitHubService]
+    C --> D[GitHub REST API]
+```
+
 
 ## How the Application Works
 
